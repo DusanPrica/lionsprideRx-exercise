@@ -603,7 +603,8 @@ hr {
     }
 
     .pill_card .responsive_img {
-        height: 200px;
+        max-width: 100%;
+        height: auto;
         margin: 10px 0;
     }
 
