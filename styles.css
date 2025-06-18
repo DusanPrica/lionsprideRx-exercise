@@ -458,13 +458,37 @@ hr {
     }
 
     .grid_container {
-        display: flex;
-        flex-direction: column;
-        text-align: start;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
     }
 
-    .grid_container h2 {
+    .grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .left_grid {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .left_grid h2 {
         font-size: 16px;
+    }
+
+    .right_grid {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .arrow {
+        height: 30px;
+        width: 30px;
     }
 
     .us_us_fda {
