@@ -447,9 +447,32 @@ hr {
         padding: 20px 20px;
     }
 
+    .pill_card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: none;
+        padding: 20px;
+        flex-basis: auto; 
+    }
+
+    .card_left_content {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 15px;
+        align-self: center;
+    }
+
+    .card_right_content {
+        width: 100%;
+        flex-grow: 1;
+    }
+
     .pill_card .responsive_img {
-        height: 200px;
-        margin: 15px 0;
+        width: 100%;
+        margin: 0 0 15px 0;
     }
 
     .get_started_button {
