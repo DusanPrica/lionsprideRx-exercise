@@ -1,0 +1,677 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav_links_container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.logo img {
+    display: inline-block;
+    width: auto;
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    gap: 20px;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: 500;
+    transition: color 0.3 ease;
+}
+
+nav ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.header_button .button {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    border: 0.1px solid;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+    font-size: 14px;
+    font-family: "Outfit", sans-serif;
+    cursor: pointer;
+}
+
+.header_button .button:hover {
+    background-color: #a2a2b8;
+}
+
+.hamburger_menu {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.hamburger_menu .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;    
+}
+
+.hamburger_menu.active .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger_menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger_menu.active .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+h1 {
+    padding: 50px 0 20px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+}
+
+.bottles_container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    gap: 20px;
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pill_card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 20px;
+    color: white;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.card_left_content {
+    flex: 1;
+    padding-right: 15px;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.card_right_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.blue_pills {
+    background: linear-gradient(180deg,rgba(27, 95, 122, 1) 0%, rgba(136, 170, 191, 1) 50%, rgba(211, 224, 230, 1) 100%);
+}
+
+.yellow_pills {
+    background: linear-gradient(180deg,rgba(186, 115, 0, 1) 0%, rgba(209, 193, 151, 1) 50%, rgba(211, 224, 230, 1) 100%);
+}
+
+.pill_card .responsive_img {
+    height: 300px;
+    width: auto;
+    margin: 20px 0;
+    object-fit: contain;
+}
+
+.get_started_button {
+    display: inline-flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer; 
+}
+
+.get_started_button::after{
+    content: '\279c';
+    margin-left: 10px;
+    font-size: 1.3em;
+}
+
+.get_started_button:hover::after {
+    transform: translateX(5px);
+}
+
+.grid_container {
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}   
+
+.grid {
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.left_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 15px;
+}
+
+.right_grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 20px; 
+}
+
+.comming_soon_img {
+    height: 100px;
+    width: 100px;
+}
+
+.arrow {
+    height: 50px;
+    width: 50px;
+}
+
+.us_us_fda {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.licence, 
+.heart, 
+.checked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.icon_img {
+    height: 50px;
+    width: 50px;
+}
+
+.erectile_dysfunction {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 0;
+    padding: 50px;
+}
+
+.ed_left_top_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 80px 40px 80px 40px;
+    background-color: white;
+}
+
+.ed_left_top_content h2 {
+    font-size: 48px;
+    font-family: "Outfit", sans-serif;
+}
+
+.ed_left_top_content p {
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+}
+
+.ed_left_bottom_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 50px;
+}
+
+.ed_right_content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.pills_bag {
+    height: 200px;
+    width: 300px;
+}
+
+.couple_kissing {
+    display: block;
+    object-fit: cover;
+    height: 600px;
+    width: 400px;
+}
+
+.start_treatment_button {
+    background-color: #e4002b;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer; 
+    border: none;
+}
+
+.start_treatment_button:hover {
+    background-color: #c00025;
+}
+
+.start_treatment_button::after {
+    content: '\279C';
+    font-size: 1.2em;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.start_treatment_button:hover::after {
+    transform: translateX(5px);
+}
+
+hr {
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    header .container {
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-left: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .header_button {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .header_button .button {
+        margin: 0;
+        width: calc(100%-40px);
+        max-width: 300px;
+    }
+
+    .hamburger_menu{
+        display: flex;
+    }
+
+    .nav_links_container {
+        position: absolute;
+        display: none;
+        flex-direction: column; 
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px solid #eee;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        padding: 20px 0;
+    }
+
+    .nav-links-container.active {
+        display: flex;
+    }
+
+    .hero_section h1 {
+        font-size: 24px;
+        padding: 30px 0 15px 0;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .bottles_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 20px;
+    }
+
+    .pill_card .responsive_img {
+        height: 200px;
+        margin: 15px 0;
+    }
+
+    .get_started_button {
+        padding: 12px 15px;
+        font-size: 12px;
+    }
+
+    .grid_container {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .grid_container h2 {
+        font-size: 16px;
+    }
+
+    .us_us_fda {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 20px;
+        align-items: center;
+    }
+
+    .licence, 
+    .heart, 
+    .checked {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .icon_img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .erectile_dysfunction {
+        flex-direction: column;
+        min-height: auto;
+        padding: 0;
+    }
+
+    .ed_left{
+        flex: auto;
+        width: 100%;
+        padding: 40px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ed_left_bottom_content, 
+    .ed_left_top_content{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    .ed_right {
+        flex: auto;
+        min-height: 250px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .start_treatment_button {
+        padding: 15px 30px;
+        font-size: 0.5em;
+        margin-bottom: 40px;
+    }
+
+    .pills_bag {
+        max-height: 150px;
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    header .container {
+        justify-content: space-between;
+    }
+
+    .nav_links_container {
+        flex-grow: 1;
+        justify-content: center;
+        display: flex;
+    }
+
+    .hamburger_menu {
+        display: none;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    .header_button .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .hero_section h1 {
+        font-size: 40px;
+        padding: 40px 15px 20px 15px;
+    }
+
+    .hero_subtitle {
+        font-size: 17px;
+        margin-bottom: 25px;
+        padding: 0 15px;
+    }
+
+    .bottles_container {
+        max-width: 800px;
+        gap: 15px;
+        padding: auto;
+    }
+
+    .pill_card {
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    .pill_card .responsive_img {
+        height: 200px;
+        margin: 10px 0;
+    }
+
+    .get_started_button {
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+
+    .grid_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: auto;
+    }
+
+    .grid {
+        padding: 12px;
+    }
+
+    .left_grid h2 {
+        font-size: 20px;
+    }
+
+    .coming_soon_text {
+        font-size: 15px;
+    }
+
+    .comming_soon_img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .arrow {
+        height: 35px;
+        width: 35px;
+    }
+
+    .us_us_fda {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 15px;
+        padding: 40px 15px;
+    }
+
+    .licence, 
+    .heart, 
+    .checked {
+        min-width: 150px;
+        padding: 8px;
+    }
+
+    .icon_img {
+        height: 45px;
+        width: 45px;
+        margin-bottom: 12px;
+    }
+
+    .erectile_dysfunction {
+        flex-direction: row;
+        min-height: 600px;
+    }
+
+    .ed_left_bottom_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ed_left_top_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ed_left {
+        flex: 0 0 55%;
+        padding: 60px 30px 60px 80px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .ed_right {
+        flex: 1;
+        min-height: 400px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .start_treatment_button {
+        padding: 15px 35px;
+        font-size: 0.8em;
+        margin-bottom: 50px;
+    }
+
+}
