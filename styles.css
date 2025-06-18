@@ -786,7 +786,7 @@ hr {
     }
     .generic_for_viagra .responsive_img, 
     .generic_for_cialis .responsive_img {
-        height: 150px;
+        height: auto;
         max-width: 100%;
         margin-bottom: 20px;
     }
@@ -819,6 +819,12 @@ hr {
         box-sizing: border-box;
     }
 
+    .hl_left .responsive_img {
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
     .hl_left,
     .hl_right {
         max-width: 100%;
@@ -826,10 +832,6 @@ hr {
         padding: 0;
         margin-bottom: 20px;
 
-    }
-
-    .hl_right {
-        min-height: auto;
     }
     
     .hl_right_top_content h2 {
