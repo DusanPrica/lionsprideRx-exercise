@@ -784,9 +784,10 @@ hr {
         min-width: auto;
         padding: 30px 20px;
     }
-    .generic_for_viagra img, 
-    .generic_for_cialis img {
+    .generic_for_viagra .responsive_img, 
+    .generic_for_cialis .responsive_img {
         height: 150px;
+        max-width: 100%;
         margin-bottom: 20px;
     }
     .generic_for_viagra h3, 
