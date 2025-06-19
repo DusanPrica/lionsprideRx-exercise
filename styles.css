@@ -470,7 +470,7 @@ hr {
     display: flex;
     flex-direction: row;
     background-color: white;
-    margin: 0;
+    margin-top: 200px;
     padding: 50px;
 }
 
@@ -571,6 +571,198 @@ hr {
 }
 
 .hl_right_bottom_content .white_button:hover {
+    background-color: darkgray;
+}
+
+.testosterone {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-top: 200px;
+    padding: 50px;
+}
+
+.test_right .responsive_img {
+    display: block;
+    object-fit: cover;
+    height: 600px;
+    width: 400px;
+}
+
+.test_left_top_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 80px 40px 80px 40px;
+    background-color: white;
+}
+
+.test_left_top_content h2 {
+    font-size: 48px;
+    font-family: "Outfit", sans-serif;
+}
+
+.test_left_top_content p {
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+}
+
+.test_left_bottom_content {
+    display: flex;
+    flex-direction: row;
+}
+
+.test_left_right_bottom_content h3 {
+    max-width: 400px;
+    text-align: start;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.test_img {
+    height: 300px;
+    width: 300px;
+}
+
+.test_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.test_left_right_bottom_content .grey_button {
+    background-color: #b3b3b3;
+    display: inline-flex;
+    align-items: center;
+    color: black;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer; 
+    border: none;
+}
+
+.test_left_right_bottom_content .grey_button:hover {
+    background-color: darkgrey;
+}
+
+.weight_loss {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-top: 200px;
+    padding: 50px;
+}
+
+.wl_left .responsive_img {
+    display: block;
+    object-fit: cover;
+    height: 600px;
+    width: 400px;
+}
+
+.wl_right_top_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 80px 40px 80px 40px;
+    background-color: white;
+}
+
+.wl_right_top_content h2 {
+    font-size: 48px;
+    font-family: "Outfit", sans-serif;
+}
+
+.wl_right_top_content p {
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+}
+
+.wl_right_bottom_content {
+    display: flex;
+    flex-direction: row;
+}
+
+.wl_right_right_bottom_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.wl_right_right_bottom_content h3 {
+    max-width: 400px;
+    text-align: start;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.wl_img {
+    height: 250px;
+    width: 250px;
+    padding: 40px;
+}
+
+.wl_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.wl_right_bottom_content .grey_button {
+    background-color: #b3b3b3;
+    display: inline-flex;
+    align-items: center;
+    color: black;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer; 
+    border: none;
+}
+
+.wl_right_bottom_content .grey_button:hover {
+    background-color: darkgray;
+}
+
+.wl_right_bottom_content .white_button {
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    color: black;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer; 
+    border: 1px solid black;
+}
+
+.wl_right_bottom_content .white_button:hover {
     background-color: darkgray;
 }
 
@@ -810,66 +1002,91 @@ hr {
         max-width: 250px;
     }
     
-    .hair_loss {
+    .hair_loss,
+    .testosterone,
+    .weight_loss {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         padding: 0px 15px;
-        width: 100%;
+        max-width: 100%;
         gap: 30px;
         box-sizing: border-box;
     }
 
-    .hl_left .responsive_img {
+    /*.hl_left .responsive_img,
+    .test_right .responsive_img,
+    .wl_left .responsive_img {
         height: auto;
         max-width: 100%;
         margin-bottom: 20px;
-    }
+    }*/
 
     .hl_left,
-    .hl_right {
+    .hl_right,
+    .test_left,
+    .test_right,
+    .wl_left,
+    .wl_right {
         max-width: 100%;
         width: 100%;
         padding: 0;
         margin-bottom: 20px;
 
     }
-    
-    .hl_right_top_content h2 {
+
+    .hl_right_top_content h2,
+    .test_left_top_content h2,
+    .wl_right_top_content h2 {
         font-size: 2.5em;
         margin-bottom: 15px;
         align-items: center;
         text-align: center;
     }
 
-    .hl_right_top_content p {
+    .hl_right_top_content p,
+    .test_left_top_content p,
+    .wl_right_top_content p {
         font-size: 0.95em;
         margin-bottom: 20px;
     }
 
-    .hl_right_bottom_content {
+    .hl_right_bottom_content,
+    .test_left_bottom_content,
+    .wl_right_bottom_content {
         flex-direction: column;
         gap: 20px;
         align-items: center;
     }
 
-    .hl_right_right_bottom_content {
+    .hl_right_right_bottom_content,
+    .test_left_right_bottom_content,
+    .wl_right_right_bottom_content {
         align-items: center;
         text-align: center;
     }
 
-    .hl_right_right_bottom_content p:first-child {
+    .hl_right_right_bottom_content p:first-child,
+    .test_left_right_bottom_content p:first-child,
+    .wl_right_right_bottom_content p:first-child {
         margin: 0 auto 10px auto; 
     }
 
-    .hl_right_right_bottom_content h3 {
+    .hl_right_right_bottom_content h3,
+    .test_left_right_bottom_content h3, 
+    .wl_right_right_bottom_content {
         font-size: 1.8em;
     }
 
-    .hl_right_right_bottom_content p:last-of-type {
+    .hl_right_right_bottom_content p:last-of-type,
+    .test_left_right_bottom_content p:last-of-type,
+    .wl_right_right_bottom_content p:last-of-type {
         font-size: 0.9em;
     }
 
-    .hl_buttons {
+    .hl_buttons,
+    .test_buttons,
+    .wl_buttons {
         flex-direction: column;
         width: 100%;
         gap: 10px;
