@@ -1014,13 +1014,12 @@ hr {
         box-sizing: border-box;
     }
 
-    /*.hl_left .responsive_img,
+    .hl_left .responsive_img,
     .test_right .responsive_img,
-    .wl_left .responsive_img {
-        height: auto;
-        max-width: 100%;
-        margin-bottom: 20px;
-    }*/
+    .wl_left .responsive_img,
+    .couple_kissing {
+        display: none;
+    }
 
     .hl_left,
     .hl_right,
