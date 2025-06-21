@@ -98,4 +98,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     showSlides(slideIndex);
+
+    const accordionHeaders = document.querySelectorAll('.accordion_header');
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const content = this.nextElementSibling.nextElementSibling;
+            const divider = this.nextElementSibling;
+
+            this.classList.toggle('active');
+
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                content.style.maxHeight = '0';
+                content.style.paddingBottom = '0'; 
+            } else {
+                content.classList.add('open');
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.style.paddingBottom = '15px';
+            }
+        });
+    });
 });

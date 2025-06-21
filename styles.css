@@ -1073,6 +1073,93 @@ hr {
     background-color: #717171;
 }
 
+
+.faq .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px;
+}
+
+.faq h1 {
+    align-items: center;
+    text-align: left;
+    font-size: 60px;
+    font-family: "Outfit", sans-serif;
+}
+
+.faq h3 {
+    align-items: center;
+    text-align: left;
+    font-size: 24px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    color: #c00025;
+    margin-bottom: 100px;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+}
+
+.accordion_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.accordion_title {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.accordion_title h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: black;
+    font-family: "Outfit", sans-serif
+}
+
+.accordion_toggle_btn {
+    background: none;
+    font-size: 2em;
+    font-weight: bold;
+    border: none;
+    color: black;
+    cursor: pointer;
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.accordion_header.active .accordion_toggle_btn {
+    transform: rotate(45deg);
+}
+
+.accordion_divider {
+    border: 1px solid #b3b3b3;
+    margin-bottom: 10px;
+}
+
+.accordion_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    color: black;
+    font-family: "Outfit", sans-serif
+}
+
+.accordion_content.open {
+    max-height: 500px;
+    padding-bottom: 15px;
+}
+
 @media (max-width: 768px) {
 
     header .container {
@@ -1518,7 +1605,7 @@ hr {
 
     .slide_text_content p {
         align-items: center;
-        margin-top: 300px;
+        margin-top: 350px;
     }
 
     .image_wrapper {
@@ -1565,6 +1652,47 @@ hr {
         background: gray;
         border-radius: 50%;
         display: inline-block;
+    }
+
+    .faq {
+        padding: 20px 10px;
+        margin: 20px auto;
+    }
+
+    .faq h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .accordion {
+        width: 100%; 
+        margin: 15px auto;
+    }
+
+    .accordion_header {
+        padding: 10px 15px;
+    }
+
+    .accordion_title h3 {
+        font-size: 1.2em; 
+    }
+
+    .accordion_toggle_btn {
+        font-size: 1.8em; 
+        padding: 0 8px;
+    }
+
+    .accordion_divider {
+        margin: 0 15px;
+        width: calc(100% - 30px);
+    }
+
+    .accordion_content {
+        padding: 0 15px;
+    }
+
+    .accordion_content.open {
+        padding-bottom: 10px;
     }
 
 }
