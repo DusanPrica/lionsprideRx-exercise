@@ -2013,6 +2013,8 @@ footer {
         font-size: 0.75em;
         margin-top: 15px;
         padding-bottom: 15px;
+        align-items: center;
+        text-align: center;
     }
 
 }
