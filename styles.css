@@ -1217,6 +1217,10 @@ hr {
 
 @media (max-width: 768px) {
 
+    * {
+        box-shadow: 0 0 0 1px red !important;
+    }
+
     header .container {
         justify-content: space-between;
     }
