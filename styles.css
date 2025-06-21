@@ -1158,7 +1158,7 @@ hr {
     overflow: hidden;
     transition: max-height 0.5s ease-out, padding 0.5s ease-out;
     color: black;
-    font-family: "Outfit", sans-serif
+    font-family: "Outfit", sans-serif;
 }
 
 .accordion_content.open {
@@ -1174,7 +1174,6 @@ hr {
     padding: 60px 20px; 
     background-color: rgba(207, 207, 207); 
     max-width: 100%;
-    margin: 40px auto;
     gap: 40px;
 }
 
@@ -1214,6 +1213,145 @@ hr {
     height: auto;
     display: block;
 }
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    font-family: "Outfit", sans-serif;
+
+}
+
+.footer_top_part {
+    text-align: left;
+    max-width: 100%;
+    margin: 30px 30px;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.footer_bottom_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.left_footer_bottom_part {
+    flex: 0 0 50%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.left_footer_bottom_part img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.contact_info p {
+    color: white;
+    margin: 0;
+    font-size: 0.95em;
+}
+
+.phone_number_link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+    cursor: pointer; 
+}
+
+.phone_number_link:hover {
+    color: #007bff;
+}
+
+.sponsors {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.sponsors img {
+    height: 100px;
+    width: auto;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.right_footer_bottom_part {
+    flex: 0 0 50%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px; 
+    align-items: flex-start;  
+}
+
+.footer_payment_methods {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.footer_payment_methods h4 {
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 600;
+}
+
+.footer_payment_methods img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+}
+
+.footer_column {
+    width: 100%;
+}
+
+.footer_column h4 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer_column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_column ul li {
+    margin-bottom: 8px;
+}
+
+.footer_column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.footer_column ul li a:hover {
+    color: #007bff;
+}
+
 
 @media (max-width: 768px) {
 
@@ -1762,6 +1900,106 @@ hr {
     .grey_div_img {
         padding: 0;
         flex: 0 0 100%;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+
+    .footer_top_part {
+        padding: 0 15px;
+        margin-bottom: 20px; 
+        font-size: 0.8em;
+    }
+
+    .footer_bottom_part {
+        flex-direction: column;
+        align-items: center; 
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .left_footer_bottom_part,
+    .right_footer_bottom_part {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 100%; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .left_footer_bottom_part {
+        gap: 15px;
+    }
+
+    .left_footer_bottom_part img {
+        height: 40px;
+    }
+
+    .contact_info {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .contact_info p {
+        font-size: 0.9em;
+    }
+
+    .phone_number_link {
+        font-size: 1em; 
+    }
+
+    .sponsors { 
+        justify-content: center; 
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .sponsors img {
+        height: 25px; 
+    }
+
+    .right_footer_bottom_part {
+        gap: 20px;
+        align-items: center; 
+    }
+
+    .footer_payment_methods {
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer_payment_methods h4 {
+        font-size: 1em; 
+        margin-bottom: 5px;
+    }
+
+    .footer_payment_methods img {
+        max-width: 180px; 
+    }
+
+    .footer_column { 
+        width: 100%; 
+        text-align: center;
+    }
+
+    .footer_column h4 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .footer_column ul li {
+        margin-bottom: 6px;
+    }
+
+    .footer_column ul li a {
+        font-size: 0.9em;
+    }
+
+    hr { 
+        width: 80%;
+        margin: 20px auto 0 auto;
     }
 
 }
