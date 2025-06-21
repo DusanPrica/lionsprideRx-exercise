@@ -23,7 +23,7 @@ ul {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 header {
@@ -1217,10 +1217,6 @@ hr {
 
 @media (max-width: 768px) {
 
-    * {
-        box-shadow: 0 0 0 1px red !important;
-    }
-
     header .container {
         justify-content: space-between;
     }
@@ -1723,7 +1719,8 @@ hr {
     }
 
     .accordion {
-        width: 100%; 
+        width: 100%;
+        max-width: 100%;
         margin: 15px auto;
     }
 
@@ -1757,7 +1754,8 @@ hr {
         flex-direction: column;
         padding: 20px 15px;
         margin: 20px auto;
-        gap: 20px;    
+        gap: 20px;
+        max-width: 100%;
     }
 
     .grey_div_text{
