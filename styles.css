@@ -1919,24 +1919,38 @@ footer {
         padding: 0 15px;
     }
 
-    .left_footer_bottom_part,
-    .right_footer_bottom_part {
-        flex: 0 0 auto;
-        width: 100%;
-        max-width: 100%; 
-        align-items: center;
-        text-align: center;
+    .footer_logo {
+        height: 50px;
+        width: auto;
+        max-width: 100%;
     }
 
-    .left_footer_bottom_part {
+    .left_footer_bottom_part{
+        order: 1; /* Levi deo (logo, kontakt info, sponzori) ide prvi */
+        flex: 0 0 auto; /* Resetujemo flex bazis, puštamo da zauzmu punu širinu */
+        width: 100%; /* Obezbeđujemo punu širinu */
+        max-width: 100%; /* Dodatna sigurnost */
+        align-items: center; /* Centriramo sadržaj unutar levog dela */
+        text-align: center; /* Centriramo tekst (za svaki slučaj) */
         gap: 15px;
     }
 
+    .right_footer_bottom_part {
+        order: 2; /* Desni deo (payment methods, liste) ide drugi */
+        flex: 0 0 auto; /* Resetujemo flex bazis, puštamo da zauzmu punu širinu */
+        width: 100%; /* Obezbeđujemo punu širinu */
+        max-width: 100%; /* Dodatna sigurnost */
+        align-items: center; /* Centriramo sadržaj desnog dela */
+        gap: 20px;
+    }
+
     .left_footer_bottom_part img {
+        order: 1;
         height: 40px;
     }
 
     .contact_info {
+        order: 2;
         flex-direction: column;
         align-items: center;
         gap: 5px;
