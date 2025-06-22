@@ -1166,12 +1166,84 @@ hr {
     padding-bottom: 15px;
 }
 
+.blogs_section {
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+.blogs_section h2 {
+    align-items: center;
+    text-align: left;
+    font-size: 60px;
+    font-family: "Outfit", sans-serif; 
+    margin-top: 200px; 
+    margin-bottom: 50px;
+}
+
+.swiper_container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: row;
+}
+
+.blog_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(207, 207, 207);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.blog_card img {
+    max-width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    height: 200px;
+}
+
+.blog_card h3 {
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    align-self: center;
+}
+
+.blog_card .blog_link {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.blog_card .blog_link:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
 .grey_div2 {
     display: flex; 
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 60px 20px; 
+    margin-top: 100px;
     background-color: rgba(207, 207, 207); 
     max-width: 100%;
     gap: 40px;
@@ -1883,6 +1955,30 @@ footer {
 
     .accordion_content.open {
         padding-bottom: 10px;
+    }
+
+    .blog_section {
+        padding: 30px 0;
+    }
+    .blog_section h2 {
+        font-size: 1.8em;
+        margin-bottom: 25px;
+    }
+    .swiper_container {
+        padding-bottom: 40px;
+    }
+    .blog_card {
+        height: 450px; /* Još manje visine */
+        padding: 10px;
+    }
+    .blog_card img {
+        height: 150px;
+    }
+    .blog_card h3 {
+        font-size: 1.1em;
+    }
+    .blog_card p {
+        font-size: 0.8em;
     }
 
     .grey_div2{

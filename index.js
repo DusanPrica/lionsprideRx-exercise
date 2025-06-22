@@ -119,4 +119,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
+
+    const testSwiper = new Swiper('.swiper_container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+            spaceBetween: 25,
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+                1200: {
+                    slidesPerView: 4,
+                },
+            },
+    });
+}); 
