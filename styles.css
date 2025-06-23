@@ -1167,56 +1167,57 @@ hr {
 }
 
 .test-swiper-container {
-            width: 100%;
-            max-width: 1200px; /* Povećana širina za 4 slajda */
-            height: auto; /* Prilagođava se sadržaju */
-            margin: 50px auto;
-            background-color: white;
-            border: 1px solid #ddd;
-            padding: 20px; /* Dodatni padding unutar kontejnera */
-            box-sizing: border-box; /* Važno za padding */
-        }
-        .test-swiper-slide {
-            display: flex;
-            flex-direction: column; /* Sadržaj unutar slajda ide jedan ispod drugog */
-            justify-content: flex-start; /* Počinje od vrha */
-            align-items: center; /* Centriraj horizontalno */
-            padding: 15px; /* Padding unutar svakog slajda */
-            background-color: #fff; /* Bela pozadina za karticu */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
-            height: auto; /* Neka visina bude automatska */
-            box-sizing: border-box; /* Važno za padding */
-        }
-        .test-swiper-slide img {
-            max-width: 100%;
-            height: 180px; /* Fiksna visina za slike */
-            object-fit: cover; /* Slike se popunjavaju bez izobličenja */
-            border-radius: 6px;
-            margin-bottom: 15px;
-        }
-        .test-swiper-slide h3 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            color: #333;
-        }
-        .test-swiper-slide p {
-            font-size: 0.9em;
-            color: #555;
-            line-height: 1.6;
-            flex-grow: 1; /* Tekst zauzima preostali prostor */
-            margin-bottom: 15px;
-        }
-        .test-swiper-slide .read-more {
-            margin-top: auto; /* Gura link na dno kartice */
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .test-swiper-slide .read-more:hover {
-            text-decoration: underline;
-        }
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 50px auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+}
+        
+.test-swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    height: auto;
+    box-sizing: border-box;
+}
+        
+.test-swiper-slide img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+
+.test-swiper-slide p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+        
+.test-swiper-slide .read-more {
+    margin-top: auto;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+        
+.test-swiper-slide .read-more:hover {
+    text-decoration: underline;
+}
 
 .grey_div2 {
     display: flex; 
@@ -1955,7 +1956,7 @@ footer {
     .blog_card img {
         height: 150px;
     }
-    .blog_card h3 {
+    .blog h3 {
         font-size: 1.1em;
     }
     .blog_card p {
