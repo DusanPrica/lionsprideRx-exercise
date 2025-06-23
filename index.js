@@ -120,28 +120,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const testSwiper = new Swiper('.test-swiper-container', {
-                direction: 'horizontal',
-                loop: true,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                spaceBetween: 25, // Razmak između kartica
+    const swiper = new Swiper ('.slider_wrapper', {
+        loop: true,
+        grabCursor: true,
+        spaceBetween: true,
+        delay: 2000,
+        direction: 'horizontal',
 
-                breakpoints: {
-                    0: {
-                        slidesPerView: 1,
-                    },
-                    768: {
-                        slidesPerView: 2,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                    },
-                    1200: { // Za 4 kartice na većim ekranima
-                        slidesPerView: 4,
-                    },
-                },
-            });
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+
+            768: {
+                slidesPerView: 2
+            },
+
+            1024: {
+                slidesPerView: 3
+            },
+
+            1200: {
+                slidesPerView: 4
+            }
+        }
+    })
+
 }); 
