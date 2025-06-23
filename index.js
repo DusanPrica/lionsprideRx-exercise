@@ -121,29 +121,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const swiper = new Swiper ('.slider_wrapper', {
-        loop: true,
-        grabCursor: true,
-        spaceBetween: true,
-        delay: 2000,
         direction: 'horizontal',
+        loop: true,
+        autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        },
+        spaceBetween: 40,
 
         breakpoints: {
             0: {
-                slidesPerView: 1
+                slidesPerView: 1,
             },
-
             768: {
-                slidesPerView: 2
+                slidesPerView: 2,
             },
-
             1024: {
-                slidesPerView: 3
+                slidesPerView: 3,
             },
-
             1200: {
-                slidesPerView: 4
-            }
-        }
-    })
-
+                slidesPerView: 4,
+            },
+        },
+    });
 }); 
