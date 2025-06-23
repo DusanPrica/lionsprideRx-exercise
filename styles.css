@@ -1180,10 +1180,6 @@ hr {
     overflow: hidden;
 }
 
-.card_list {
-    gap: 20px;
-}
-
 .card_list .card_item {
     color: black;
     background-color: rgb(207, 207, 207);
